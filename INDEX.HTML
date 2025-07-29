@@ -1,0 +1,194 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Youssef Karim | Développeur Web</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <!-- ===== NAVBAR ===== -->
+  <header>
+    <div class="container navbar">
+      <h1 class="logo">Youssef<span>.</span></h1>
+      <nav>
+        <ul id="nav-links">
+          <li><a href="#accueil">Accueil</a></li>
+          <li><a href="#apropos">À propos</a></li>
+          <li><a href="#competences">Compétences</a></li>
+          <li><a href="#projets">Projets</a></li>
+          <li><a href="#temoignages">Témoignages</a></li>
+          <li><a href="#blog">Blog</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+        <div class="burger" onclick="toggleMenu()">☰</div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ===== ACCUEIL ===== -->
+  <section id="accueil" class="section hero">
+    <div class="container">
+      <h2>Salut, je suis <span class="highlight">Youssef Karim</span></h2>
+      <p>Développeur Web Full-Stack & passionné de technologies.</p>
+      <a href="#contact" class="btn-primary">Contactez-moi</a>
+    </div>
+  </section>
+
+  <!-- ===== À PROPOS ===== -->
+  <section id="apropos" class="section light">
+    <div class="container">
+      <h2>À propos de moi</h2>
+      <div class="about-content">
+        <img src="OIP.jpeg" alt="Youssef Karim" class="profile-img" />
+        <div>
+          <p>Développeur passionné depuis plus de 5 ans, je conçois des applications web modernes, performantes et sécurisées. J'aime résoudre des problèmes techniques et créer des interfaces fluides et accessibles.</p>
+          <ul>
+            <li>📍 Basé à : Paris, France</li>
+            <li>🎓 Formation : Ingénieur Informatique</li>
+            <li>🌐 Langues : HTML, CSS, JavaScript, PHP, Python</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== COMPÉTENCES ===== -->
+  <section id="competences" class="section">
+    <div class="container">
+      <h2>Mes compétences</h2>
+      <div class="skills-grid">
+        <div class="skill">
+          <h3>HTML / CSS</h3>
+          <div class="bar"><span style="width: 95%"></span></div>
+        </div>
+        <div class="skill">
+          <h3>JavaScript</h3>
+          <div class="bar"><span style="width: 90%"></span></div>
+        </div>
+        <div class="skill">
+          <h3>React / Vue</h3>
+          <div class="bar"><span style="width: 85%"></span></div>
+        </div>
+        <div class="skill">
+          <h3>Node.js / PHP</h3>
+          <div class="bar"><span style="width: 80%"></span></div>
+        </div>
+        <div class="skill">
+          <h3>MySQL / MongoDB</h3>
+          <div class="bar"><span style="width: 75%"></span></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== PROJETS ===== -->
+  <section id="projets" class="section light">
+    <div class="container">
+      <h2>Projets récents</h2>
+      <div class="projects-grid">
+        <div class="project-card">
+          <img src="img/project1.jpg" alt="Projet 1" />
+          <h3>Portfolio Responsive</h3>
+          <p>Site personnel développé en HTML, CSS, JS.</p>
+        </div>
+        <div class="project-card">
+          <img src="img/project2.jpg" alt="Projet 2" />
+          <h3>Application ToDo React</h3>
+          <p>App moderne avec React, stockage local et animations.</p>
+        </div>
+        <div class="project-card">
+          <img src="img/project3.jpg" alt="Projet 3" />
+          <h3>Dashboard Administrateur</h3>
+          <p>Interface sécurisée avec Node.js et MongoDB.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Suite dans la 2e partie… -->
+  <!-- ===== TÉMOIGNAGES ===== -->
+  <section id="temoignages" class="section">
+    <div class="container">
+      <h2>Témoignages</h2>
+      <div class="testimonials-grid">
+        <div class="testimonial-card">
+          <p>« Youssef est un développeur exceptionnel. Son travail est toujours soigné et livré à temps. »</p>
+          <h4>– Claire D.</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>« Très professionnel et à l’écoute. Je recommande vivement ses services. »</p>
+          <h4>– Marc L.</h4>
+        </div>
+        <div class="testimonial-card">
+          <p>« Grâce à Youssef, notre site web a gagné en performance et esthétique. »</p>
+          <h4>– Sophie R.</h4>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== BLOG ===== -->
+  <section id="blog" class="section light">
+    <div class="container">
+      <h2>Articles récents</h2>
+      <div class="blog-grid">
+        <article class="blog-post">
+          <h3>Comment améliorer la performance de votre site</h3>
+          <p>Découvrez 5 astuces simples pour booster la rapidité de votre site web.</p>
+          <a href="#" class="btn-secondary">Lire la suite</a>
+        </article>
+        <article class="blog-post">
+          <h3>Les tendances du développement web en 2025</h3>
+          <p>Un aperçu des technologies et pratiques qui dominent cette année.</p>
+          <a href="#" class="btn-secondary">Lire la suite</a>
+        </article>
+        <article class="blog-post">
+          <h3>Pourquoi utiliser React pour vos projets</h3>
+          <p>Les avantages d’un framework moderne pour construire des interfaces réactives.</p>
+          <a href="#" class="btn-secondary">Lire la suite</a>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===== CONTACT ===== -->
+  <section id="contact" class="section">
+    <div class="container">
+      <h2>Contactez-moi</h2>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <label for="name">Nom complet</label>
+          <input type="text" id="name" name="name" placeholder="Votre nom" required />
+        </div>
+        <div class="form-group">
+          <label for="email">Adresse e-mail</label>
+          <input type="email" id="email" name="email" placeholder="votre.email@example.com" required />
+        </div>
+        <div class="form-group">
+          <label for="message">Message</label>
+          <textarea id="message" name="message" rows="5" placeholder="Votre message..." required></textarea>
+        </div>
+        <button type="submit" class="btn-primary">Envoyer</button>
+        <p id="form-message" class="form-message"></p>
+      </form>
+    </div>
+  </section>
+
+  <!-- ===== FOOTER ===== -->
+  <footer class="footer">
+    <div class="container">
+      <p>© 2025 Youssef Karim. Tous droits réservés.</p>
+      <div class="social-links">
+        <a href="#" aria-label="LinkedIn">LinkedIn</a>
+        <a href="#" aria-label="GitHub">GitHub</a>
+        <a href="#" aria-label="Twitter">Twitter</a>
+        <a href="#" aria-label="Facebook">Facebook</a>
+        <a href="#" aria-label="Whatssap">Whatssap</a>
+      </div>
+    </div>
+  </footer>
+
+</body>
+</html>
